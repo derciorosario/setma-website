@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Setma Website</title>
+    <title>Setma TIC</title>
     <link rel="stylesheet" href="css/style.css">
-  <!--<script src="https://www.google.com/recaptcha/api.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LfBVuMmAAAAAJoHfl5i6nxtm6Nqg8em_ErJfczE"></script>-->  
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico"> 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 </head>
 <body>
     <div class="container">
         <div class="left_menu">
               <ul>
-                        <li><a href="#" class="active">- INICIO</a></li>
-                        <li><a href="#services">- NOSSOS SERVIÇOS</a></li>
-                        <li><a href="#portfolio">- PORTIFOLIO</a></li>
-                        <li><a href="#contact">- CONTACTO</a></li>
+                        <li><a href="#" class="active">INICIO</a></li>
+                        <li><a href="#services">NOSSOS SERVIÇOS</a></li>
+                        <li><a href="#portfolio">PORTIFOLIO</a></li>
+                        <li><a href="#contact">CONTACTO</a></li>
              </ul>
         </div>
 
@@ -24,23 +25,11 @@
             <span>MENU</span>
         </div>
 
-        <div class="float-c">
-          <span class="close-btn" onclick="document.querySelector('.float-c').classList.remove('show')">
-<svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></span>
-          <div class="f_portfolio">
+       
 
-                     <div class="content">
-                            <h3>SKYNET - <span>Denselvimento web</span></h3>
-                            <img src="img/portfolio/1.svg">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit. Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum. Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Eget egestas purus viverra accumsan in. Augue mauris augue neque gravida. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mi proin sed libero enim sed faucibus turpis. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Vitae ultricies leo integer malesuada. Ac auctor augue mauris augue neque gravida in fermentum et.</p>
-                     </div>
-
-          </div>
-          
-        </div>
          <header>
             <nav>
-                <a href="#"><img src="img/logo.png"/></a>
+                <span class="logo-c"><a href="#"><img src="img/logo.png"/></a></span>
                 <div class="center">
                     <ul>
                         <li><a href="#" class="active">INICIO</a></li>
@@ -50,18 +39,23 @@
                         <li><a href="#contact">CONTACTO</a></li>
                     </ul>
                 </div>
+                <span>
+                    <button><a href="http://www.store.setma.co.mz/">LOJA VIRTUAL</a></button>
+                </span>
                 
-                <a href="#"><button>LOJA VIRTUAL</button></a>
                
             </nav>
+            <div class="burger" onclick="document.querySelector('nav').classList.toggle('active')">
+                   <span></span><span></span><span></span>
+            </div>
          </header>
 
           <div s="home" id="home" p>
              <div class="content">
                   <div class="s text-c">
-                      <h2>Empresa Provedora de <span>Soluções IT</span></h2>
+                      <h2>Provedores de<br> <span>Soluções IT</span></h2>
                       <p>Densenvolva os seus projectos connosco</p>
-                      <a href="#"><button>Nossos Serviços <svg style="fill: #fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="22"><path d="m480-160-42-43 247-247H160v-60h525L438-757l42-43 320 320-320 320Z"/></svg></button></a>
+                      <a href="#services"><button class="l">Nossos Serviços <svg style="fill: #fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="22"><path d="m480-160-42-43 247-247H160v-60h525L438-757l42-43 320 320-320 320Z"/></svg></button></a>
 
                   </div>
                   <div class="s img-c">
@@ -88,44 +82,162 @@
          <div s="clients" id="clients">
                <div class="content">
                     <div class="s-title">
-                        <h3>//Nossos Clientes</h3>
+                        <h3>Nossos clientes</h3>
                         <p>Eles confiam em <span>nós</span></p>
                     </div>
 
-                    <div class="slider">
+                    <div class="slider s1">
+
+                        <div class="v-slider">
+                            <div class="slide">
+                                 <img style="transform: scale(0.9);" src="img/clients/1.svg">
+                                 <img src="img/clients/5.svg">
+                                 <img style="transform: scale(0.8);margin-bottom: 0.2rem;" src="img/clients/9.svg">
+                                 <img src="img/clients/1.svg">
+                            </div>
+                         </div>
+                         <div class="v-slider">
+                            <div class="slide">
+                                  <img src="img/clients/2.svg">
+                                 <img style="transform: scale(2);" src="img/clients/6.svg">
+                                 <img style="transform: scale(1.04);" src="img/clients/10.svg">
+                                 <img src="img/clients/2.svg">
+                            </div>
+                         </div>
+                         <div class="v-slider">
+                            <div class="slide">
+                                 <img src="img/clients/3.svg">
+                                 <img style="transform: scale(0.8);" src="img/clients/7.svg">
+                                 <img style="transform: scale(0.8);" src="img/clients/11.svg">
+                                 <img src="img/clients/3.svg">
+                            </div>
+                         </div>
+                         <div class="v-slider">
+                            <div class="slide">
+                                 <img src="img/clients/4.svg">
+                                 <img style="transform: scale(1.05);" src="img/clients/8.svg">
+                                 <img style="transform: scale(1.02);" src="img/clients/12.svg">
+                                 <img src="img/clients/4.svg">
+                            </div>
+                         </div>
+
+                        <!--
                         <div class="v-slider">
                            <div class="slide">
+                                <img src="img/clients/mcnet.png" style="transform: scale(0.8);">
+                                <img src="img/clients/grindrod.png" style="transform: scale(0.8);">
+                                <img style="transform: scale(0.8);margin-bottom: 0.2rem;" src="img/clients/9.svg">
                                 <img src="img/clients/1.svg">
-                                <img src="img/clients/4.svg">
+                           </div>
+                        </div>
+                        <div class="v-slider">
+                           <div class="slide">
+                                 <img src="img/clients/counterpart.png" style="transform: scale(0.8);">
+                                <img style="transform: scale(0.8)" src="img/clients/cedsif.png">
+                                <img style="transform: scale(1.04);" src="img/clients/10.svg">
                                 <img src="img/clients/2.svg">
+                           </div>
+                        </div>
+                        <div class="v-slider">
+                           <div class="slide">
+                                <img src="img/clients/sgs.png" style="transform: scale(0.8);">
+                                <img style="transform: scale(0.8);" src="img/clients/skynet.png">
+                                <img style="transform: scale(0.8);" src="img/clients/11.svg">
+                                <img src="img/clients/3.svg">
+                           </div>
+                        </div>
+                        <div class="v-slider">
+                           <div class="slide">
+                                <img src="img/clients/moza.png" style="transform: scale(0.8);">
+                                <img style="transform: scale(0.7);" src="img/clients/oiltanking.png">
+                                <img src="img/clients/12.svg">
+                                <img src="img/clients/4.svg">
+                           </div>
+                        </div>
+                           -->
+
+                    </div>
+
+
+
+                    <div class="slider s2" style="display: none;">
+                        <div class="v-slider">
+                           <div class="slide">
+                                <img style="transform: scale(0.9);" src="img/clients/1.svg">
+                                <img src="img/clients/5.svg">
+                                <img style="transform: scale(0.8);margin-bottom: 0.2rem;" src="img/clients/9.svg">
                                 <img src="img/clients/1.svg">
                            </div>
                         </div>
                         <div class="v-slider">
                            <div class="slide">
                                  <img src="img/clients/2.svg">
-                                <img src="img/clients/3.svg">
-                                <img src="img/clients/2.svg">
+                                <img style="transform: scale(2);" src="img/clients/6.svg">
+                                <img style="transform: scale(1.04);" src="img/clients/10.svg">
                                 <img src="img/clients/2.svg">
                            </div>
                         </div>
                         <div class="v-slider">
                            <div class="slide">
                                 <img src="img/clients/3.svg">
-                                <img src="img/clients/2.svg">
-                                <img src="img/clients/3.svg">
+                                <img style="transform: scale(0.8);" src="img/clients/7.svg">
+                                <img style="transform: scale(0.8);" src="img/clients/11.svg">
                                 <img src="img/clients/3.svg">
                            </div>
                         </div>
-                        <div class="v-slider">
-                           <div class="slide">
-                                <img src="img/clients/4.svg">
-                                <img src="img/clients/1.svg">
-                                <img src="img/clients/3.svg">
-                                <img src="img/clients/4.svg">
-                           </div>
-                        </div>
+                        
                     </div>
+
+
+
+                    <div class="slider s3" style="display: none;">
+                        <div class="v-slider">
+                           <div class="slide">
+                                <img style="transform: scale(0.9);" src="img/clients/1.svg">
+                                <img src="img/clients/5.svg">
+                                <img style="transform: scale(0.8);margin-bottom: 0.2rem;" src="img/clients/9.svg">
+                                <img src="img/clients/1.svg">
+                           </div>
+                        </div>
+                        <div class="v-slider">
+                           <div class="slide">
+                                 <img src="img/clients/2.svg">
+                                <img style="transform: scale(2);" src="img/clients/6.svg">
+                                <img style="transform: scale(1.04);" src="img/clients/10.svg">
+                                <img src="img/clients/2.svg">
+                           </div>
+                        </div>
+                       
+                    </div>
+
+
+                    <div class="slider s4" style="display: none;">
+                        <div class="v-slider">
+                           <div class="slide">
+                                <img src="img/clients/1.svg">
+                                <img src="img/clients/2.svg">
+                                <img src="img/clients/3.svg">
+                                <img src="img/clients/4.svg">
+                                <img src="img/clients/5.svg">
+                                <img style="transform: scale(2);" src="img/clients/6.svg">
+                                <img style="transform: scale(0.8);" src="img/clients/7.svg">
+                                <img style="transform: scale(1.05);" src="img/clients/8.svg">
+                                <img style="transform: scale(0.8);margin-bottom: 0.2rem;" src="img/clients/9.svg">
+                                <img style="transform: scale(1);" src="img/clients/10.svg">
+                                <img style="transform: scale(1);" src="img/clients/11.svg">
+                                <img src="img/clients/12.svg">
+                                <img src="img/clients/1.svg">
+                               
+                                
+                               
+                           </div>
+                        </div>
+                      
+                       
+                    </div>
+
+
+                    
  
 
                </div>
@@ -134,20 +246,21 @@
 
         <div s="about-us" id="about-us">
             <div class="content">
-                <img src="img/about-us-left-side-bg.svg" class="bg">
+                <img src="img/about-us-left-side-bg.svg" class="bg" style="opacity: .2;">
                 <div class="s-title">
-                        <h3>// SOBRE NÓS</h3>
-                        <p>Porquê  <span>Setma</span></p>
+                        <h3>Sobre nós</h3>
+                        <p>Porquê  <span>SETMA</span></p>
                  </div>
 
                  <div class="text-c">
-                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                     <p>Na SETMA, nós acreditamos em excelência.</p>
+                     <p>Acreditamos que nossa equipa é possuidora de valores, os quais em conjunção com sua inquestionável capacidade, produzirão uma experiência inigualável nos serviços de TI oferecidos.</p>
                  </div>
 
-                 <div class="btn">
+                <a href="#contact"> <div class="btn">
                       <img src="img/gradient-btn.svg">
                       CONTACTE - NOS
-                 </div>
+                 </div></a>
             </div>
         </div>
 
@@ -155,52 +268,92 @@
         <div s="services" id="services" p>
             <div class="content">
                  <div class="s-title">
-                        <h3>//NOSSOS SERVIÇOS</h3>
-                        <p>O Que <span>Fazemos</span></p>
+                        <h3>Nossos serviços</h3>
+                        <p>O que <span>fazemos</span></p>
                  </div>
                  <div class="service-c">
 
-                      <img class="bg-botton-left" src="img/green-gradient-bar.svg">
+                     <img class="bg-botton-left" src="img/green-gradient-bar.svg">
                       <img class="bg-top-right" src="img/green-gradient-bar.svg">
-
-                     <div class="box">
-                         <img src="img/services/1.svg">
-                         <h3>Web Design</h3>
+                      <div class="box" onclick="service_details(this)">
+                         <img src="img/services/6.svg">
+                         <h3>Consultoria Informática</h3>
                          <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
+                         <span style="display: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit.
+                            Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum.
+                            Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis
+                            aliquam malesuada bibendum. Eget egestas purus viverra accumsan in.
+                        </span>
                      </div>
 
-                      <div class="box">
-                         <img src="img/services/2.svg">
-                         <h3>Sistemas de Computadores</h3>
-                         <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
-                     </div>
 
-
-                      <div class="box">
-                         <img src="img/services/3.svg">
+                      <div class="box" onclick="service_details(this)">
+                         <img src="img/services/3.svg" style="transform: translateX(10%);">
                          <h3>Assistência Técnica</h3>
                          <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
+                         <span style="display: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit.
+                            Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum.
+                            Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis
+                            aliquam malesuada bibendum. Eget egestas purus viverra accumsan in.
+                        </span>
                      </div>
 
-
-                      <div class="box">
-                         <img src="img/services/4.svg">
-                         <h3>Redes e Servidores</h3>
-                         <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
-                     </div>
-
-
-                      <div class="box">
+                     <div class="box" onclick="service_details(this)">
                          <img src="img/services/5.svg">
                          <h3>Markiting Digital</h3>
                          <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
+                         <span style="display: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit.
+                            Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum.
+                            Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis
+                            aliquam malesuada bibendum. Eget egestas purus viverra accumsan in.
+                        </span>
+                     </div>
+
+                     <div class="box" onclick="service_details(this)">
+                         <img src="img/services/2.svg">
+                         <h3>Densevolvimento de Sistemas</h3>
+                         <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
+                         <span style="display: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit.
+                            Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum.
+                            Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis
+                            aliquam malesuada bibendum. Eget egestas purus viverra accumsan in.
+                        </span>
                      </div>
 
 
-                      <div class="box">
-                         <img src="img/services/6.svg">
-                         <h3>Consultoria e Informática</h3>
+                      <div class="box" onclick="service_details(this)">
+                         <img src="img/services/4.svg">
+                         <h3>Redes e Servidores</h3>
                          <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
+                         <span style="display: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit.
+                            Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum.
+                            Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis
+                            aliquam malesuada bibendum. Eget egestas purus viverra accumsan in.
+                        </span>
+                     </div>
+
+
+                      <div class="box" onclick="service_details(this)">
+                         <img src="img/services/1.svg">
+                         <h3>Web Design</h3>
+                         <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
+                         <span style="display: none;">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit.
+                            Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum.
+                            Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis
+                            aliquam malesuada bibendum. Eget egestas purus viverra accumsan in.
+                        </span>
                      </div>
 
                  </div>
@@ -213,67 +366,74 @@
             <div class="content">
                
                 <div class="s-title">
-                        <h3>//PORTIFOLIO</h3>
-                        <p>Projectos <span>Selecionados</span></p>
+                        <h3>Portifolio</h3>
+                        <p>Projectos <span>selecionados</span></p>
                  </div>
 
                  <div class="portfolio-c">
-
+                    <div class="float_nav left" style="display: none;">
+                        <span onclick="slide_port('left')">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M561-240 320-481l241-241 43 43-198 198 198 198-43 43Z"/></svg>
+                       </span>
+                    </div>
+                    <div class="float_nav right">
+                       <span onclick="slide_port('right')">
+                          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m375-240-43-43 198-198-198-198 43-43 241 241-241 241Z"/></svg>
+                       </span>
+                    </div>
 
                     <div class="s-c">
-
                            <div class="_c">
-
-
-                                <div class="box" onclick="show_port_details(this)">
+                                <div class="box">
+                                    <div class="bg" onclick="show_port_details(this)"></div>
                                     <img src="img/portfolio/1.svg">
                                     <h3>SKYNET - <span>Denselvimento web</span></h3>
                                     <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
                                     <span style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit. Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum. Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Eget egestas purus viverra accumsan in. Augue mauris augue neque gravida. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mi proin sed libero enim sed faucibus turpis. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Vitae ultricies leo integer malesuada. Ac auctor augue mauris augue neque gravida in fermentum et.</span>
-                                    
+                                    <div class="_btn" onclick="show_cartas('0')"><label>Carta de referência</label></div>
                                 </div>
 
-                                 <div class="box" onclick="show_port_details(this)">
+                                 <div class="box">
+                                     <div class="bg" onclick="show_port_details(this)"></div>
                                     <img src="img/portfolio/2.svg">
                                     <h3>SKYNET - <span>Denselvimento web</span></h3>
                                     <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
                                     <span style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit. Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum. Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Eget egestas purus viverra accumsan in. Augue mauris augue neque gravida. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mi proin sed libero enim sed faucibus turpis. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Vitae ultricies leo integer malesuada. Ac auctor augue mauris augue neque gravida in fermentum et.</span>
-                                    
+                                     <div class="_btn" onclick="show_cartas('1')"><label>Carta de referência</label></div>
                                 </div>
 
-                                 <div class="box" onclick="show_port_details(this)">
+                                 <div class="box">
+                                    <div class="bg" onclick="show_port_details(this)"></div>
                                     <img src="img/portfolio/3.svg">
                                     <h3>SKYNET - <span>Denselvimento web</span></h3>
                                     <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
                                     <span style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit. Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum. Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Eget egestas purus viverra accumsan in. Augue mauris augue neque gravida. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mi proin sed libero enim sed faucibus turpis. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Vitae ultricies leo integer malesuada. Ac auctor augue mauris augue neque gravida in fermentum et.</span>
-                                    
+                                     <div class="_btn" onclick="show_cartas('2')"><label>Carta de referência</label></div>
                                 </div>
 
-
-                           </div>
-
-
-                            <div class="_c">
-
-
-                                <div class="box" onclick="show_port_details(this)">
+                                <div class="box">
+                                    <div class="bg" onclick="show_port_details(this)"></div>
                                     <img src="img/portfolio/1.svg">
                                     <h3>SKYNET - <span>Denselvimento web</span></h3>
                                     <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
-                                    
+                                    <span style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit. Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum. Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Eget egestas purus viverra accumsan in. Augue mauris augue neque gravida. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mi proin sed libero enim sed faucibus turpis. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Vitae ultricies leo integer malesuada. Ac auctor augue mauris augue neque gravida in fermentum et.</span>
+                                    <div class="_btn" onclick="show_cartas('0')"><label>Carta de referência</label></div>
                                 </div>
 
-                                 <div class="box" onclick="show_port_details(this)">
+                                 <div class="box">
+                                     <div class="bg" onclick="show_port_details(this)"></div>
                                     <img src="img/portfolio/2.svg">
                                     <h3>SKYNET - <span>Denselvimento web</span></h3>
                                     <p>Porem ipsum dolor sit amet, consecerm anglse sicing elite sombar, sed do an i</p>
-                                    
+                                    <span style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit. Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum. Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Eget egestas purus viverra accumsan in. Augue mauris augue neque gravida. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mi proin sed libero enim sed faucibus turpis. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Vitae ultricies leo integer malesuada. Ac auctor augue mauris augue neque gravida in fermentum et.</span>
+                                     <div class="_btn" onclick="show_cartas('1')"><label>Carta de referência</label></div>
                                 </div>
 
-                               
+
 
 
                            </div>
+
 
                     </div>
 
@@ -281,7 +441,7 @@
                  </div>
 
                  <div class="nav"> 
-                     <span class="active"></span><span></span>
+                     <span class="active n1"></span><span class="n2"></span><span class="n3"></span><span class="n4"></span><span class="n4"></span>
                  </div>
 
             </div>
@@ -301,19 +461,19 @@
 
                      <div class="box">
                          <span end="184">0</span>
-                         <p>POJECTOS COLUIDOS</p>
+                         <p>CLIENTES ACTIVOS</p>
                      </div>
                       <div class="box">
                          <span end="184">0</span>
-                         <p>POJECTOS SATISFEITOS</p>
+                         <p>PROJECTOS EM ANDAMENTO</p>
                      </div>
                       <div class="box">
                          <span end="204">0</span>
-                         <p>POJECTOS APRESENTADOS</p>
+                         <p>PROJECTOS APRESENTADOS</p>
                      </div>
                       <div class="box">
                          <span end="17">0</span>
-                         <p>POJECTOS EM ANDAMENTO</p>
+                         <p onclick="show_cartas()" class="link">CARTAS DE REFERÊNCIA</p>
                      </div>
                 </div>
          </div>
@@ -323,11 +483,12 @@
            <div s="comments" id="comments">
                 <div class="content">
                   <div class="s-title">
-                        <h3>//SATISFAÇÕES</h3>
-                        <p>O Que Eles <span>Dizem</span></p>
+                        <h3>Satisfações</h3>
+                        <p>O que eles <span>dizem</span></p>
                  </div>
                    <div class="flex">
-                         <div class="c-c">
+                        <div>
+                         <div class="c-c horizontal_scroll">
                             <div class="slider">
 
                                <div class="item">
@@ -384,10 +545,12 @@
 
                             </div>
 
+                          </div>
 
-                            <div class="nav"> 
-                                         <span class="active"></span><span></span><span></span>
-                            </div>
+                          <div class="nav"> 
+                            <span class="active"></span><span></span><span></span>
+                          </div>
+                            
                         </div>
 
 
@@ -418,22 +581,40 @@
 
 
 
-          
            <div s="contact"  p>
                <div class="content">
                     <h3>Pronto para falar do seu <span>projecto</span>?</h3>
+                   
+
+                      
+                      
+
+                      
+                     
+                      
                     <form>
                          <div class="input_div">
                               <input type="text" name="nome" placeholder="Nome">
                               <input type="text" name="email" placeholder="Email">
                          </div>
-                         <textarea placeholder="Mensagem"></textarea>
-                         <button onclick="send_message()">Enviar</button>
+                         <textarea placeholder="Mensagem" name="message"></textarea>
+                        
+                         <div class="_recaptcha_c">
+                            <div class="g-recaptcha" data-sitekey="6LfPgxUnAAAAACGX-OWBKQYyXfk56HyfUihk4883" data-callback="onSubmit" data-size="invisible"></div>
+                            <button class="l">Enviar</button>
+                            <label class="msg">Por favor, preencha todos os campos!</label>
+                            
+                         </div>
+                        
                     </form>
-
+                    <div style="opacity: 0;pointer-events: none;" class="g-recaptcha"
+                    data-sitekey="6LfPgxUnAAAAACGX-OWBKQYyXfk56HyfUihk4883"
+                    data-callback="onSubmit"
+                    data-size="invisible">
+                    </div>
                      <div class="number-and-email">
                            <span> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" width="24"><path d="M795-120q-122 0-242.5-60T336-336q-96-96-156-216.5T120-795q0-19.286 12.857-32.143T165-840h140q13.611 0 24.306 9.5Q340-821 343-805l27 126q2 14-.5 25.5T359-634L259-533q56 93 125.5 162T542-254l95-98q10-11 23-15.5t26-1.5l119 26q15.312 3.375 25.156 15.188Q840-316 840-300v135q0 19.286-12.857 32.143T795-120ZM229-588l81-82-23-110H180q0 39 12 85.5T229-588Zm369 363q41 19 89 31t93 14v-107l-103-21-79 83ZM229-588Zm369 363Z"/></svg> +258 84 559 1051 </span>
-                      </div>
+                     </div>
                </div>
            </div>
 
@@ -452,7 +633,7 @@
                                </span>
 
                                <a href="#">
-<svg  xmlns="http://www.w3.org/2000/svg"  width="49" viewBox="0 -960 960 960" ><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+<svg  xmlns="http://www.w3.org/2000/svg"  width="42" viewBox="0 -960 960 960" ><path d="M480.089-490Q509-490 529.5-510.589q20.5-20.588 20.5-49.5Q550-589 529.411-609.5q-20.588-20.5-49.5-20.5Q451-630 430.5-609.411q-20.5 20.588-20.5 49.5Q410-531 430.589-510.5q20.588 20.5 49.5 20.5ZM480-159q133-121 196.5-219.5T740-552q0-117.79-75.292-192.895Q589.417-820 480-820t-184.708 75.105Q220-669.79 220-552q0 75 65 173.5T480-159Zm0 79Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
 Av.2 de Junho n°264, Cidade da Matola
 </a>
 
@@ -485,7 +666,7 @@ Av.2 de Junho n°264, Cidade da Matola
                                    SERVIÇOS
                                </span>
 
-                               <a href="#">- Consultoria e Informática</a>
+                               <a href="#">- Consultoria Informática</a>
                                <a href="#">- Assistência Técnica</a>
                                <a href="#">- Redes e Servidores</a>
                           </div>
@@ -500,7 +681,7 @@ Av.2 de Junho n°264, Cidade da Matola
 
                            <div class="news_letter">
                                    <input type="text" name="newsletter" placeholder="Email">
-                                   <button>Enviar</button>
+                                   <button class="l">Enviar</button>
                            </div>
                           </div>
 
@@ -525,24 +706,215 @@ Av.2 de Junho n°264, Cidade da Matola
           </div>  
 
 
+     <div class="_confirmation_div" onclick="document.querySelector('._confirmation_div').classList.remove('active')">
+        <span class="success_ani">
+            <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 64 64">
+                <circle cx="32" cy="32" r="30" fill="#f1f1f1" />
+                <circle cx="32" cy="32" r="20" fill="transparent" stroke="#33cc33" stroke-width="4">
+                  <animate attributeName="r" begin="0s" dur="0.8s" values="0;20" calcMode="linear" repeatCount="1" />
+                  <animate attributeName="opacity" begin="0s" dur="0.8s" values="1;0" calcMode="linear" repeatCount="1" />
+                </circle>
+                <path d="M20 32l8 8 16-16" stroke="#33cc33" stroke-width="4" fill="none">
+                  <animate attributeName="stroke-dasharray" begin="0s" dur="0.6s" values="0,48;48,48;48,0" calcMode="linear" repeatCount="1" />
+                  <animate attributeName="stroke-dashoffset" begin="0s" dur="0.6s" values="48;0;0" calcMode="linear" repeatCount="1" />
+                </path>
+              </svg>
+
+              <label>Obrigado pela sua mensagem!</label>
+        </span>
+     </div>     
+
+
+ <div class="float-c">
+          <span class="close-btn" onclick="document.querySelector('.float-c').classList.remove('show')">
+ <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="m249-207-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></span>
+          <div class="f_portfolio">
+
+                    
+                      <div class="content project-detail">
+                             <div class="top-content">
+                              <h3>SKYNET - <span>Denselvimento web</span></h3>
+                              <div class="_btn"><label>Carta de referência</label></div>
+                            </div>
+                            <img src="img/portfolio/1.svg">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pretium fusce id velit ut tortor pretium. Justo laoreet sit amet cursus sit. Etiam non quam lacus suspendisse. Magna etiam tempor orci eu lobortis elementum. Est ullamcorper eget nulla facilisi. Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Eget egestas purus viverra accumsan in. Augue mauris augue neque gravida. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Mi proin sed libero enim sed faucibus turpis. Ac tortor vitae purus faucibus ornare suspendisse sed nisi lacus. Vitae ultricies leo integer malesuada. Ac auctor augue mauris augue neque gravida in fermentum et.</p>
+                            <button><a href="#">Ver Projecto</a></button>
+                       </div>
+
+                       <div class="content service-detail">
+                           <div class="top-content">
+                               <h3><span onclick="document.querySelector('.float-c').classList.remove('show')"><a href="#services">Nossos serviços</a> / </span><span class="sercice-name"></span></h3>
+                               <!--<div class="_btn"><label>Carta de referência</label></div>--> 
+                            </div>
+                            <div class="top-section">
+                                 <div class="text">
+                                         <h3 class="title"></h3>
+                                 </div>
+                                 <div class="img-c">
+                                    <img>  
+                                 </div>
+                            </div>
+                            <p>
+                               
+                            </p>
+
+                            
+                            
+                            <button onclick="go_to(this)"><a href="#contact">Contacte - nos</a></button>
+                       </div>
+
+                       <div class="content cartas_abonatorias">
+                            <div class="top-content">
+                              <h3><span>Cartas de referência</span></h3>
+                            </div>
+                            <div class="list">
+
+
+                                <div class="item" onclick="show_prewiew(this)">
+                                    <div class="top">
+                                        <span>Correios de moçambique <label>Consultoria Informática</label></span>
+                                        <label>
+                                          <span class="see">Ver</span>
+                                          <a href="docs/1.pdf"><span>Baixar</span></a>
+                                          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                                        </label>
+                                    </div>
+                                    <div class="preview">
+                                      <iframe src="docs/1.pdf" width="100%" height="100%"></iframe>
+                                    </div>
+                                </div>
+
+
+
+                                 <div class="item" onclick="show_prewiew(this)">
+                                    <div class="top">
+                                        <span>Correios de moçambique <label>Consultoria Informática</label></span>
+                                        <label>
+                                          <span class="see">Ver</span>
+                                          <a href="docs/1.pdf"><span>Baixar</span></a>
+                                          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                                        </label>
+                                    </div>
+                                    <div class="preview">
+                                      <iframe src="docs/1.pdf" width="100%" height="100%"></iframe>
+                                    </div>
+                                </div>
+
+
+
+
+                                 <div class="item" onclick="show_prewiew(this)">
+                                    <div class="top">
+                                        <span>Correios de moçambique <label>Consultoria Informática</label></span>
+                                        <label>
+                                          <span class="see">Ver</span>
+                                          <a href="docs/1.pdf"><span>Baixar</span></a>
+                                          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                                        </label>
+                                    </div>
+                                    <div class="preview">
+                                      <iframe src="docs/1.pdf" width="100%" height="100%"></iframe>
+                                    </div>
+                                </div>
+
+
+
+                                 <div class="item" onclick="show_prewiew(this)">
+                                    <div class="top">
+                                        <span>Correios de moçambique <label>Consultoria Informática</label></span>
+                                        <label>
+                                          <span class="see">Ver</span>
+                                          <a href="docs/1.pdf"><span>Baixar</span></a>
+                                          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                                        </label>
+                                    </div>
+                                    <div class="preview">
+                                      <iframe src="docs/1.pdf" width="100%" height="100%"></iframe>
+                                    </div>
+                                </div>
+
+
+
+
+                                 <div class="item" onclick="show_prewiew(this)">
+                                    <div class="top">
+                                        <span>Correios de moçambique <label>Consultoria Informática</label></span>
+                                        <label>
+                                          <span class="see">Ver</span>
+                                          <a href="docs/1.pdf"><span>Baixar</span></a>
+                                          <svg xmlns="http://www.w3.org/2000/svg" height="48" viewBox="0 -960 960 960" width="48"><path d="M480-345 240-585l43-43 197 198 197-197 43 43-240 239Z"/></svg>
+                                        </label>
+                                    </div>
+                                    <div class="preview">
+                                      <iframe src="docs/1.pdf" width="100%" height="100%"></iframe>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                       </div>
+
+          </div>
+          
+        </div>
+
+
+
+
+
+
+
     </div>
 
     <script type="text/javascript" src="js/partners-img-content.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
      <script>
        
+       function onSubmit(token) {
+
+          
+       }
+
+       document.querySelector("form").addEventListener('sumbit',(e)=>e.preventDefault())
+
+
+       let check_fields_timeout
+
+       function validadeForm(event){
+            event.preventDefault();
+            const name=document.querySelector('form [name=nome]').value
+            const email=document.querySelector('form [name=email]').value
+            const message=document.querySelector('form [name=message]').value
+
+
+           if (!name || !message || !message) {
+               document.querySelector('[s=contact]  .content .msg').classList.add('active')
+               setTimeout(()=>document.querySelector('[s=contact]  .content .msg').classList.remove('active'),3000)
                
+               document.querySelectorAll('form [name]').forEach(e=>{
+                  if(!e.value){
+                    e.classList.add('empty')
+                    clearTimeout(check_fields_timeout)
+                    setTimeout(()=>{
+                        e.classList.remove('empty')
+                    },3000)
+                  }else{
+                        e.classList.remove('empty')
+                  }
+               })
 
-            function send_message(e){
-                    //document.querySelector('[s=contact] form').preventDefault();
-                    grecaptcha.ready(function() {
-                      grecaptcha.execute('6LfBVuMmAAAAAJoHfl5i6nxtm6Nqg8em_ErJfczE', {action: 'submit'}).then(function(token) {
-                          // Add your logic to submit to your backend server here.
-                      });
-                });
+            } else {
+                document.querySelector('._confirmation_div').classList.add('active')
+                document.querySelectorAll('form [name]').forEach(e=>e.value="")
+                setTimeout(() => {
+                    document.querySelector('._confirmation_div').classList.remove('active')
+                },4000);
+                //grecaptcha.execute();
             }
+       }
 
-      
+       document.querySelector("form button").onclick=validadeForm
     </script>
 </body>
 </html>
